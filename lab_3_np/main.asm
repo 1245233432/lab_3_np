@@ -28,7 +28,8 @@ STORE:
 	LOOP L
 	MOV BYTE PTR [EDI], 0
 	POP EBP					; восстанавливаем значение EBP
-	RET
+	RET						; нет аргументов у RET, так как стек, по соглашению cdecl, очищает программа,
+							; а не подпрограмма
 _SUBSTR ENDP
 END
 	

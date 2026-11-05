@@ -2,7 +2,7 @@
 #include <cstdio>
 #include <string>
 
-extern "C" void SUBSTR(const char* SOURCE, int POS, int LEN, char* DEST);
+extern "C" void SUBSTR(const char* SOURCE, int POS, int LEN, char* DEST); // объявление внешнего идентификатора
 
 int main() {
 	std::string SOURCE;
